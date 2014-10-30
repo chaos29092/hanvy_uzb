@@ -185,7 +185,7 @@
 
 
 <div class="alignright">
-<h3>Свяжитесь с нами</h3>
+<h3>Biz bilan bog'lanishingiz</h3>
 {{ Form::open(array('url' => 'mailPost')) }}
     <div>
     {{Form::label('email', 'E-Mail(*)  :')}}
