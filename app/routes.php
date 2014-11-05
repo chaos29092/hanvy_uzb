@@ -21,7 +21,7 @@ Route::post('mailPost', function()
     $date = Input::all();
 
     Mail::send('emails.inquiry', array('subject'=>$date['subject'],'mes'=>$date['mes'],'email'=>$date['email']),function($message){
-        $message->to(array('admin@hanvyzj.com','vp05@hanvyzj.com','vp20@hanvyzj.com','vp11@hanvyzj.com'), 'inquiry')->subject('沥拌-乌兹别克-网站询盘');
+        $message->to(array('admin@hanvyzj.com','vp05@hanvyzj.com','vp11@hanvyzj.com','chaos29092@gmail.com'), 'inquiry')->subject('沥拌-乌兹别克-网站询盘');
     });
 
     return Redirect::back()->with('message', 'Message Send Successfully! We will contact you as soon as possible.');
